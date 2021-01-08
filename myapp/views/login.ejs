@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body,html{
+        height: 100%;
+      }
+      body{
+        background: url("http://game.gtimg.cn/images/yxzj/coming/v2/skins//image/20210108/16100860517773.jpg" ) no-repeat ;
+        background-size:cover;
+      }
+      .root {
+        width: 400px;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+        position: relative;
+        top: 130px;
+        border-radius: 10px;
+        animation:move 1s ;
+
+      }
+      #container {
+        width: 300px;
+        height: 400px;
+       
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        border-radius: 10px;
+      }
+      h1{
+        font-size: 35px;
+        color: #4ea4dc;
+        text-align: center;
+        font-family: Constantia;
+        border-bottom: 5px solid #4ea4dc;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+      #username {
+        position: relative;
+        padding: 5px 0;
+        margin:12px 0;
+        outline-style: none;
+        width: 100%;
+        height: 30px;
+        border-style: none;
+        border-bottom: 3px solid #ffffff;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 18px;
+        color: black;
+      }
+      #password {
+        position: relative;
+        padding: 5px 0;
+        margin:12px 0;       
+        outline-style: none;
+        width: 100%;
+        height: 30px;
+        border-style: none;
+        border-bottom: 3px solid #ffffff;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 18px;
+        color: black;
+      }
+      button{
+        display: inline-block;
+        border: 1px solid #4ea4dc;
+        width: 100%;
+        line-height: 40px;
+        padding: 0 100px;
+        margin-top: 20px;
+        background-color: #4ea4dc;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+      #forgot{
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        color:#4ea4dc ;
+        text-decoration: none;
+      }
+
+      @keyframes move{
+            0%{
+              opacity: 0;
+
+            }
+            
+            100%{
+              opacity: 1;
+
+            }
+        }
+    </style>
+  </head>
+  <body>
+      <div class="root">
+        <div id="container">
+          <h1 class="title">商品管理登录系统</h1>     
+        
+          <div class="login-box-bodyWrap">
+            <div class="login-box-body">
+                <form action="/login/in" method="post">
+                   
+                     <input type="text"  placeholder="请输入你的管理员账号" id="username" name="username">
+                    
+                 
+                    <input type="password"   placeholder="请输入你的管理员密码" id="password" name="password">
+                    
+                  
+                    <button type="submit"  >登录</button>
+                   
+                  
+                </form>
+                <!-- /.social-auth-links -->
+                <a href="#" id="forgot">如你忘记了密码，请联系你的负责人</a>
+                 
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    
+  </body>
+</html>

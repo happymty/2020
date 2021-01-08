@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body,html{
+        height: 100%;
+      }
+      body{
+        background: url("http://game.gtimg.cn/images/yxzj/coming/v2/skins//image/20210104/16097576563528.jpg") no-repeat ;
+        background-size:cover;
+      }
+      #content{
+        width: 400px;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+        position: relative;
+        top: 130px;
+        border-radius: 10px;
+        
+      }
+      #container {
+        width: 300px;
+        height: 400px;
+       
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        border-radius: 10px;
+      }
+
+      .login {
+        display: block;
+        font-size: 35px;
+        color: #4ea4dc;
+        text-align: center;
+        font-family: Constantia;
+        border-bottom: 5px solid #4ea4dc;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+
+      #username {
+        position: relative;
+        padding: 5px 0;
+        margin:12px 0;
+        outline-style: none;
+        width: 100%;
+        height: 30px;
+        border-style: none;
+        border-bottom: 3px solid #ffffff;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 18px;
+        color: black;
+      }
+      #password {
+        position: relative;
+        padding: 5px 0;
+        margin:12px 0;       
+        outline-style: none;
+        width: 100%;
+        height: 30px;
+        border-style: none;
+        border-bottom: 3px solid #ffffff;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 18px;
+        color: black;
+      }
+      #passwordAff {
+        position: relative;
+        margin:5px 0;
+        padding: 12px 0;
+        outline-style: none;
+        width: 100%;
+        height: 30px;
+        border-style: none;
+        border-bottom: 3px solid #ffffff;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 18px;
+        color: black;
+      }
+      
+      button{
+        display: inline-block;
+        border: 1px solid #4ea4dc;
+        width: 100%;
+        line-height: 40px;
+        padding: 0 100px;
+        margin-top: 20px;
+        background-color: #4ea4dc;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+     
+      
+      
+     
+      
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <div id="container" class="animated bounceInLeft">
+        <span class="login">账号注册</span>
+  
+        <form action="/register/in" method="post">
+          <input
+            type="text"
+            placeholder="请输入你的账号"
+            id="username"
+            name="username"
+          />
+  
+          
+          <input
+            type="password"
+            placeholder="请输入你的密码"
+            id="password"
+            name="password"
+          />
+  
+          <input
+            type="password"
+            placeholder="请确认你的密码"
+            id="passwordAff"
+           
+          />
+  
+          
+  
+          <button type="submit">注册</button>
+        </form>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
